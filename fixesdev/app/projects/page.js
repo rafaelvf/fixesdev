@@ -55,10 +55,24 @@ export default function Projects() {
               payment processor, as well as MongoDB for database management.
             </SheetDescription>
           </SheetHeader>
+          <div className="flex flex-col gap-2 mt-2">
+            <p className="font-semibold ">Key points</p>
+            <ul className="list-disc text-[14px] text-[#647488] pl-4">
+              <li>Is integrated with their SAP system</li>
+              <li>Integrates Paymetez which is a payment processor</li>
+              <li>
+                Uses Sanity as a CMS to upload the images for their products
+              </li>
+              <li>
+                Uses Sanity as a CMS to upload the images for their products
+              </li>
+            </ul>
+          </div>
 
-          <SheetFooter>
-            <SheetClose asChild>
-              <Button type="submit">Save changes</Button>
+          <SheetFooter className="mt-4">
+            <SheetClose className="flex gap-4">
+              <Button>Website</Button>
+              <Button variant="outline">Video</Button>
             </SheetClose>
           </SheetFooter>
         </SheetContent>
