@@ -89,7 +89,7 @@ export default function Profile() {
           </Carousel>
         </TabsContent>
         <TabsContent value="skills">
-          <div className="flex gap-8 flex-wrap mt-10">
+          <div className="flex gap-8 justify-center md:justify-start flex-wrap mt-10">
             {skillsData.map((skill, index) => (
               <Image
                 src={skill.logoUrl}
