@@ -4,16 +4,16 @@ export const sidebar = [
     ruta: "/projects",
     coincidencia: "projects",
   },
-  {
-    nombre: "Skills",
-    ruta: "/skills",
-    coincidencia: "skills",
-  },
-  {
-    nombre: "Social links",
-    ruta: "/social",
-    coincidencia: "social",
-  },
+  // {
+  //   nombre: "Skills",
+  //   ruta: "/skills",
+  //   coincidencia: "skills",
+  // },
+  // {
+  //   nombre: "Social links",
+  //   ruta: "/social",
+  //   coincidencia: "social",
+  // },
   {
     nombre: "Profile",
     ruta: "/profile",
