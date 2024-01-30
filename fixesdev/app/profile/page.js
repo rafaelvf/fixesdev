@@ -50,14 +50,14 @@ export default function Profile() {
           <p className="mt-4">
             I am curious person who got cought into exploring how the internet
             and computers work. Around 2020 when pandemic hit I realized my
-            current job wasn't making me happy and I started exploring new
+            current job wasn&apos;t making me happy and I started exploring new
             options. I have always liked my programming classes in high school
-            and university but didn't think it was the "thing" for me. So I
-            started with learning to code online, until on 2021 I decided to
-            take a big step and get into a full-stack bootcamp and change
-            careers definetely. Since then I have been non stop working and
-            learning every day. It has been a sacrifice but awesome experience
-            which I like more and more.
+            and university but didn&apos;t think it was the &quot;thing&quot;
+            for me. So I started with learning to code online, until on 2021 I
+            decided to take a big step and get into a full-stack bootcamp and
+            change careers definetely. Since then I have been non stop working
+            and learning every day. It has been a sacrifice but awesome
+            experience which I like more and more.
             <br /> What makes me continue is that I really enjoy it and my
             curiosity. I am always learning why things work they way they do.
           </p>
@@ -109,13 +109,13 @@ export default function Profile() {
                 href={skill.link}
                 target="_blank"
                 rel="noopener noreferrerz"
+                key={index}
               >
                 <Image
                   src={skill.logoUrl}
                   width="50"
                   height="50"
                   alt={skill.name}
-                  key={index}
                 />
               </Link>
             ))}
@@ -179,13 +179,13 @@ export default function Profile() {
                 target="_blank"
                 rel="noopener noreferrerz"
                 className="flex gap-3"
+                key={index}
               >
                 <Image
                   src={skill.logoUrl}
                   width="40"
                   height="40"
                   alt={skill.name}
-                  key={index}
                 />
                 <Separator orientation="vertical" />
               </Link>
