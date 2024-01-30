@@ -40,7 +40,7 @@ export default function Profile() {
     <div className="col-span-12 md:col-span-10 flex p-4 bg-[#ffffff]">
       <Toaster />
       <Tabs defaultValue="about" className="w-fit">
-        <TabsList className="grid w-full grid-cols-4 w-[360px] mx-auto md:mx-0">
+        <TabsList className="grid w-full grid-cols-4 w-[350px] mx-auto md:mx-0">
           <TabsTrigger value="about">About me</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>
           <TabsTrigger value="social">Social links</TabsTrigger>
@@ -67,7 +67,7 @@ export default function Profile() {
             the chance. Here is a gallery of my favorite photos I have taken.
           </p>
 
-          <Carousel className="w-full max-w-xs md:max-w-[30rem] mx-auto mt-6">
+          <Carousel className="w-full max-w-[16rem] sm:max-w-[25rem] md:max-w-[30rem] mx-auto mt-6">
             <CarouselContent>
               {galleryData.map((image, index) => (
                 <CarouselItem key={index}>
@@ -78,7 +78,7 @@ export default function Profile() {
                     alt={image.name}
                     className="rounded"
                   />
-                  <p className="flex justify-end mr-2 mt-2 font-extralight">
+                  <p className="flex justify-center md:justify-end mr-2 mt-3 font-extralight">
                     {image.name}
                   </p>
                 </CarouselItem>

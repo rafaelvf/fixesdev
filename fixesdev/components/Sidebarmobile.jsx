@@ -10,7 +10,7 @@ export default function Sidebarmobile() {
   const lastPart = parts[parts.length - 1];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="fixed bg-[#ffffff] border rounded bottom-1 right-1 md:hidden z-10 p-3 flex flex-col ">
+    <div className="fixed bg-[#71797E] border rounded bottom-2 right-2 md:hidden z-10 p-2 flex flex-col ">
       <img
         src="/icons/ham.svg"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
