@@ -14,7 +14,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
-import { ToastAction } from "@/components/ui/toast";
 import { useToast } from "@/components/ui/use-toast";
 import {
   Carousel,
@@ -23,7 +22,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
+import galleryData from "@/data/gallery";
 export default function Profile() {
   const { toast } = useToast();
   const copyEmailToClipboard = () => {
@@ -32,11 +31,16 @@ export default function Profile() {
       title: "Email copied successfully!",
     });
   };
+  const pdfUrl = "/CVRafael24.pdf";
+  const handleViewPortfolio = () => {
+    const url = "/CVRafael24.pdf"; // URL of your PDF file
+    window.open(url, "_blank");
+  };
   return (
-    <div className="col-span-10 flex p-4 bg-[#ffffff]">
+    <div className="col-span-12 md:col-span-10 flex p-4 bg-[#ffffff]">
       <Toaster />
       <Tabs defaultValue="about" className="w-fit">
-        <TabsList className="grid w-full grid-cols-4 w-[360px]">
+        <TabsList className="grid w-full grid-cols-4 w-[360px] mx-auto md:mx-0">
           <TabsTrigger value="about">About me</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>
           <TabsTrigger value="social">Social links</TabsTrigger>
@@ -57,20 +61,28 @@ export default function Profile() {
             <br /> What makes me continue is that I really enjoy it and my
             curiosity. I am always learning why things work they way they do.
           </p>
+          <p className="mt-4">
+            Besides of programming I am a big fan of sports and photography. The
+            sport I practice the most is surfing. I try to do it whenever I have
+            the chance. Here is a gallery of my favorite photos I have taken.
+          </p>
 
-          <Carousel className="w-full max-w-xs mx-auto mt-6">
+          <Carousel className="w-full max-w-xs md:max-w-[30rem] mx-auto mt-6">
             <CarouselContent>
-              <CarouselItem>
-                <Image
-                  src="/gallery/ola.webp"
-                  width={300}
-                  height={300}
-                  alt="wave"
-                  className="rounded"
-                />
-              </CarouselItem>
-              <CarouselItem>.sdff.</CarouselItem>
-              <CarouselItem>...</CarouselItem>
+              {galleryData.map((image, index) => (
+                <CarouselItem key={index}>
+                  <Image
+                    src={image.url}
+                    width={500}
+                    height={300}
+                    alt={image.name}
+                    className="rounded"
+                  />
+                  <p className="flex justify-end mr-2 mt-2 font-extralight">
+                    {image.name}
+                  </p>
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
@@ -121,7 +133,7 @@ export default function Profile() {
                       value="Hello World"
                       id="myInput"
                       onClick={copyEmailToClipboard}
-                      className="hover:bg-gray-200 hover:rounded p-1"
+                      className="hover:bg-gray-200 hover:rounded p-1 transition"
                     >
                       reviterif@gmail.com
                     </p>
@@ -178,6 +190,29 @@ export default function Profile() {
                 <Separator orientation="vertical" />
               </Link>
             ))}
+          </div>
+          <p className="font-semibold mt-10">My CV:</p>
+          <div className="flex gap-3  mt-5 text-[14px] ">
+            <div className="flex gap-3 items-center ">
+              <a
+                href="/CVRafael24.pdf"
+                download="Rafael Viteri CV"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:bg-gray-200 hover:rounded p-1 cursor-pointer transition"
+              >
+                Download
+              </a>
+
+              <Separator orientation="vertical" />
+            </div>
+
+            <p
+              onClick={handleViewPortfolio}
+              className="hover:bg-gray-200 hover:rounded p-1 transition cursor-pointer"
+            >
+              See online
+            </p>
           </div>
         </TabsContent>
       </Tabs>

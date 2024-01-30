@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/sheet";
 export default function Projects() {
   return (
-    <div className="col-span-10 flex p-4">
+    <div className="col-span-12 md:col-span-10 flex p-4">
       <Sheet>
         <Card className=" h-fit max-w-[350px] relative pb-4">
           <CardHeader>
