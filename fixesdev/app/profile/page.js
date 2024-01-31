@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import skillsData from "@/data/skill";
 import Image from "next/image";
@@ -23,6 +23,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import galleryData from "@/data/gallery";
+
 export default function Profile() {
   const { toast } = useToast();
   const copyEmailToClipboard = () => {
@@ -31,15 +32,16 @@ export default function Profile() {
       title: "Email copied successfully!",
     });
   };
-  const pdfUrl = "/CVRafael24.pdf";
+
   const handleViewPortfolio = () => {
     const url = "/CVRafael24.pdf"; // URL of your PDF file
     window.open(url, "_blank");
   };
+
   return (
     <div className="col-span-12 md:col-span-10 flex p-4 bg-[#ffffff]">
       <Toaster />
-      <Tabs defaultValue="about" className="w-fit">
+      <Tabs defaultValue={"about"} className="w-fit">
         <TabsList className="grid w-full grid-cols-4 w-[350px] mx-auto md:mx-0">
           <TabsTrigger value="about">About me</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>
