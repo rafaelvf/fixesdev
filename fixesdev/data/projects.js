@@ -52,6 +52,28 @@ const projectsData = [
     video: "https://youtu.be/FPHc5nTIusM",
     image: "/images/marriott1.webp",
   },
+  {
+    title: "Ambush design",
+    shortDescription:
+      "Ambush is a Japanese fashion brand which is inspired in innovative pop-art. They decided to enter web3 with this project launching the POW! NFT collection. As a front end developer, I was part of the team that built the project.",
+    longDescription:
+      "We used technologies such as Nextjs, React, typescript, scss and GSAP.",
+    keyPoints: [],
+    url: "https://ambushdesign.io/",
+    video: "",
+    image: "/images/ambush2.png",
+  },
+  {
+    title: "Moodiesnft",
+    shortDescription:
+      "MoodiesNFT is a web3 project that aims to bring emotional intelligence to the world of non-fungible tokens (NFTs). With MoodiesNFT, users can express their emotions through unique digital assets that reflect their moods and personalities. ",
+    longDescription:
+      "We used technologies such as Nextjs, React, typescript, scss and GSAP.",
+    keyPoints: [],
+    url: "https://www.moodiesnft.io/",
+    video: "",
+    image: "/images/moodies2.png",
+  },
 ];
 
 export default projectsData;

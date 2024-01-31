@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {" "}
         <Navbar />
-        <div className="grid grid-cols-12 bg-[#fafafa] h-screen">
+        <div className="grid grid-cols-12 bg-[#fafafa] h-full">
           <Sidebar />
           <Sidebarmobile />
           {children}

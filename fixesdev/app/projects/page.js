@@ -75,7 +75,9 @@ export default function Projects() {
               <SheetDescription>{project.longDescription}</SheetDescription>
             </SheetHeader>
             <div className="flex flex-col gap-2 mt-2">
-              <p className="font-semibold ">Key points</p>
+              {project.keyPoints.length > 0 && (
+                <p className="font-semibold ">Key points</p>
+              )}
               <ul className="list-disc text-[14px] text-[#647488] pl-4">
                 {project.keyPoints.map((point, innerIndex) => (
                   <li key={innerIndex}>{point}</li>
@@ -92,13 +94,15 @@ export default function Projects() {
                 >
                   <Button>Website</Button>
                 </a>
-                <a
-                  href={project.video}
-                  target="_blank"
-                  rel="noopener noreferrerz"
-                >
-                  <Button variant="outline">Video</Button>
-                </a>
+                {project.video && (
+                  <a
+                    href={project.video}
+                    target="_blank"
+                    rel="noopener noreferrerz"
+                  >
+                    <Button variant="outline">Video</Button>
+                  </a>
+                )}
               </SheetClose>
             </SheetFooter>
           </SheetContent>
