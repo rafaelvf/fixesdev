@@ -74,6 +74,17 @@ const projectsData = [
     video: "",
     image: "/images/moodies2.png",
   },
+  {
+    title: "Paragonsft",
+    shortDescription:
+      "Paragons NFT is an immersive play-to-earn experience, called the Paraverse. It's a web3 application built in Nextjs using many technologies such as Threejs, React, GSAP, and AWS. ",
+    longDescription:
+      "We used technologies such as Nextjs, React, typescript, scss and GSAP.",
+    keyPoints: [],
+    url: "https://paragonsnft.com/",
+    video: "",
+    image: "/images/paragons.png",
+  },
 ];
 
 export default projectsData;
