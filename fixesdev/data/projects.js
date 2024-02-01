@@ -85,6 +85,38 @@ const projectsData = [
     video: "",
     image: "/images/paragons.png",
   },
+  {
+    title: "Salinassailingweek",
+    shortDescription:
+      "This is the official website for Salinas Sailing Week, it showcases what the event consist of, its news, pictures and results.",
+    longDescription:
+      "I used technologies such as Nextjs, React, Tailwind, Sanity",
+    keyPoints: [],
+    url: "https://salinassailingweek.com/",
+    video: "",
+    image: "/images/ssw.png",
+  },
+  {
+    title: "Marcia Fernández",
+    shortDescription:
+      "Developed the web for Marcia Fernández to showcase her photography journey.",
+    longDescription:
+      "I used technologies such as Nextjs, React, Tailwind, Sanity",
+    keyPoints: [],
+    url: "https://www.marciafernandez.com/",
+    video: "",
+    image: "/images/marcia.png",
+  },
+  {
+    title: "Saetacoffee",
+    shortDescription:
+      "Developed the web for Saetacoffee which is a local pods coffee brand.",
+    longDescription: "I used technologies such as Nextjs, React",
+    keyPoints: [],
+    url: "https://saetacoffee.com/",
+    video: "",
+    image: "/images/saeta.png",
+  },
 ];
 
 export default projectsData;

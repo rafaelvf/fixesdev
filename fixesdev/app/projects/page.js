@@ -42,24 +42,24 @@ export default function Projects() {
     <div className="col-span-12 md:col-span-10 flex gap-4 flex-wrap p-4 justify-center md:justify-start ">
       {projectsData.map((project, index) => (
         <Sheet key={index}>
-          <Card className=" h-fit flex flex-col  max-w-[350px] relative pb-4 ">
+          <Card className="flex flex-col max-w-[350px] w-full h-auto bg-white shadow-md rounded-lg overflow-hidden">
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
             </CardHeader>
-            <div className="h-[200px] flex items-center">
+            <div className="h-[200px] flex items-center justify-center">
               <Image
-                alt="Hazmeunaoferta"
+                alt={project.title}
                 width={200}
                 height={200}
                 src={project.image}
-                className="m-auto "
+                className="object-cover"
               />
             </div>
-            <p className="text-[14px] font-medium max-w-[320px] mx-auto p-6">
+            <p className="text-[14px] font-medium mx-auto p-6">
               {project.shortDescription}
             </p>
-            <div className="flex justify-evenly px-6">
-              <a href={project.url} target="_blank" rel="noopener noreferrerz">
+            <div className="mt-auto p-6 flex justify-evenly">
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <Button>Website</Button>
               </a>
               <SheetTrigger asChild>
