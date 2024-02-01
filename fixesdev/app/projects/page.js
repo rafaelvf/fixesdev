@@ -39,10 +39,10 @@ export default function Projects() {
   }, []);
   console.log(latitude, longitude, "lati");
   return (
-    <div className="col-span-12 md:col-span-10 flex gap-4 flex-wrap p-4 justify-center md:justify-start">
+    <div className="col-span-12 md:col-span-10 flex gap-4 flex-wrap p-4 justify-center md:justify-start ">
       {projectsData.map((project, index) => (
         <Sheet key={index}>
-          <Card className=" h-fit max-w-[350px] relative pb-4">
+          <Card className=" h-fit flex flex-col  max-w-[350px] relative pb-4 ">
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
             </CardHeader>
