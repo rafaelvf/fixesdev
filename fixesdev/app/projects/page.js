@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,29 +14,6 @@ import {
 } from "@/components/ui/sheet";
 import projectsData from "@/data/projects";
 export default function Projects() {
-  const [latitude, setLatitude] = useState(null);
-  const [longitude, setLongitude] = useState(null);
-
-  useEffect(() => {
-    const getLocation = () => {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            setLatitude(position.coords.latitude);
-            setLongitude(position.coords.longitude);
-          },
-          (error) => {
-            console.error("Error getting location:", error);
-          }
-        );
-      } else {
-        console.error("Geolocation is not supported by this browser.");
-      }
-    };
-
-    getLocation(); // Call getLocation when component mounts
-  }, []);
-  console.log(latitude, longitude, "lati");
   return (
     <div className="col-span-12 md:col-span-10 flex gap-4 flex-wrap p-4 justify-center md:justify-start ">
       {projectsData.map((project, index) => (
@@ -68,7 +44,7 @@ export default function Projects() {
             </div>
           </Card>
 
-          <SheetContent>
+          <SheetContent className="overflow-scroll">
             <SheetHeader>
               <SheetTitle>{project.title}</SheetTitle>
               <SheetDescription>{project.shortDescription}</SheetDescription>
