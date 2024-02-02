@@ -118,6 +118,7 @@ export default function Profile() {
                   width="50"
                   height="50"
                   alt={skill.name}
+                  className="transform hover:scale-[110%] transition"
                 />
               </Link>
             ))}
@@ -156,6 +157,7 @@ export default function Profile() {
                   width="40"
                   height="40"
                   alt={"gmail"}
+                  className="transform hover:scale-[110%] transition"
                 />
               </Link>
 
@@ -172,6 +174,7 @@ export default function Profile() {
                 width="40"
                 height="40"
                 alt={"whatsapp"}
+                className="transform hover:scale-[110%] transition"
               />
               <Separator orientation="vertical" />
             </Link>
@@ -188,6 +191,7 @@ export default function Profile() {
                   width="40"
                   height="40"
                   alt={skill.name}
+                  className="transform hover:scale-[110%] transition"
                 />
                 <Separator orientation="vertical" />
               </Link>

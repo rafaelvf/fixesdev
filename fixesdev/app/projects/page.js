@@ -18,7 +18,7 @@ export default function Projects() {
     <div className="col-span-12 md:col-span-10 flex gap-4 flex-wrap p-4 justify-center md:justify-start ">
       {projectsData.map((project, index) => (
         <Sheet key={index}>
-          <Card className="flex flex-col max-w-[350px] w-full h-auto bg-white shadow-md rounded-lg overflow-hidden">
+          <Card className="flex flex-col max-w-[350px] w-full h-auto bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-[101%] transition">
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
             </CardHeader>
