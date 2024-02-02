@@ -117,6 +117,46 @@ const projectsData = [
     video: "",
     image: "/images/saeta.png",
   },
+  {
+    title: "TheJPeffect",
+    shortDescription:
+      "TheJPeffect is a creative project that showcases the art and design work of artist and designer JP, featuring bold, colorful graphics and unique illustrations. Through his work, JP aims to inspire and uplift others, bringing joy and positivity to the world. ",
+    longDescription: "I used technologies such as Nextjs, React",
+    keyPoints: [],
+    url: "https://www.thejpeffect.io/",
+    video: "",
+    image: "/images/jpeffect.png",
+  },
+  {
+    title: "Ghostsofthedeep",
+    shortDescription:
+      "GhostOfTheDeep is an exciting web3 project which explores de the deep of the space through anonymous characters. ",
+    longDescription: "I used technologies such as Nextjs, React",
+    keyPoints: [],
+    url: "https://www.ghostsofthedeep.io/",
+    video: "",
+    image: "/images/ghost.png",
+  },
+  {
+    title: "Flycloudniners",
+    shortDescription:
+      "5,555 high utility NFT collection + storyverse + limited edition brand collab drops.",
+    longDescription: "I used technologies such as Nextjs, React",
+    keyPoints: [],
+    url: "https://www.flycloudniners.com/",
+    video: "",
+    image: "/images/cloud2.png",
+  },
+  {
+    title: "Whisbeverse",
+    shortDescription:
+      "The Vandalized series is comprised of 600 mintable NFTs created in collaboration with 24 exceptional artists. It embodies each artist's unique and individual twist on WhIsBe's iconic Vandal Gummy collection.",
+    longDescription: "I used technologies such as Nextjs, React",
+    keyPoints: [],
+    url: "https://www.whisbeverse.wtf/",
+    video: "",
+    image: "/images/whisbe.png",
+  },
 ];
 
 export default projectsData;
