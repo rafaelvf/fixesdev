@@ -18,7 +18,7 @@ export default function Navbar() {
   const copyEmailToClipboard = () => {
     navigator.clipboard.writeText("reviterif@gmail.com");
     toast({
-      title: "Email copied successfully!",
+      title: "reviterif@gmail.com copied",
     });
   };
   const handleViewPortfolio = () => {
@@ -26,8 +26,9 @@ export default function Navbar() {
     window.open(url, "_blank");
   };
   return (
-    <div className="border-b border-[#ededed]  px-4 lg:px-8 py-4 flex justify-between items-center">
+    <div className="border-b border-[#ededed]  px-4 lg:px-8 py-4 flex justify-between items-center relative">
       <p className="text-[#333333] font-bold">Fixesdev</p>
+      <Toaster />
       <div className="flex items-center gap-4">
         <div className="md:flex items-center gap-1 hidden">
           <Link
@@ -58,7 +59,6 @@ export default function Navbar() {
           </Link>
         </div>
         <div>
-          <Toaster />
           <DropdownMenu>
             <DropdownMenuTrigger>
               {" "}

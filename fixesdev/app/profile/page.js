@@ -39,7 +39,7 @@ export default function Profile() {
   };
 
   return (
-    <div className="col-span-12 md:col-span-10 flex p-4 bg-[#ffffff]">
+    <div className="col-span-12 md:col-span-10 flex p-4 bg-[#ffffff] h-full">
       <Toaster />
       <Tabs defaultValue={"about"} className="w-fit">
         <TabsList className="grid w-full grid-cols-4 w-[350px] mx-auto md:mx-0">
@@ -50,19 +50,41 @@ export default function Profile() {
         </TabsList>
         <TabsContent value="about">
           <p className="mt-4">
-            I am curious person who got cought into exploring how the internet
-            and computers work. Around 2020 when pandemic hit I realized my
-            current job wasn&apos;t making me happy and I started exploring new
-            options. I have always liked my programming classes in high school
-            and university but didn&apos;t think it was the &quot;thing&quot;
-            for me. So I started with learning to code online, until on 2021 I
-            decided to take a big step and get into a full-stack bootcamp and
-            change careers definetely. Since then I have been non stop working
-            and learning every day. It has been a sacrifice but awesome
-            experience which I like more and more.
-            <br /> What makes me continue is that I really enjoy it and my
-            curiosity. I am always learning why things work they way they do.
+            I am a curious person who got into programming when I learned I
+            could automate my work, specifically with macros in Excel. It blew
+            my mind and sparked my curiosity around programming. Then, in 2020
+            when the pandemic hit, I realized my current job wasn&apos;t making
+            me happy, and I started exploring more into programming, even though
+            I didn&apos;t think I was capable of being a programmer. After doing
+            some online courses, I decided to take a big step in 2021 and get
+            into a full-stack bootcamp to change careers definitively. Since
+            then, I have been nonstop working and learning every day. It has
+            been a huge sacrifice but an awesome and rewarding experience which
+            I like more and more.
           </p>
+          <p className="mt-4">
+            {` Now I am a developer who loves to build products. I am currently
+  building `}
+            <a
+              href="https://www.cuquipay.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold"
+            >
+              cuquipay
+            </a>
+            {` on top of many other projects. The
+  language I use to build my products is JavaScript, but my curiosity
+  has also guided me to learn C and Python. For me, it's really
+  important to know how things work, and C has given me an overall
+  notion of low-level programming. Over the course of the years, I
+  have been involved in many different projects which you can check
+  out `}
+            <Link href={"/projects"} className="font-bold">
+              here.
+            </Link>
+          </p>
+
           <p className="mt-4">
             Besides of programming I am a big fan of sports and photography. The
             sport I practice the most is surfing. I try to do it whenever I have

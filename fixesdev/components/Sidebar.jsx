@@ -14,8 +14,8 @@ export default function Sidebar() {
       {sidebar.map((i, index) => (
         <p
           key={index}
-          className={`cursor-pointer hover:bg-[#f5f5f5] p-2 rounded ${
-            i.coincidencia === lastPart ? "bg-[#f5f5f5]" : "null"
+          className={`cursor-pointer hover:bg-[#83c5be] p-2 rounded ${
+            i.coincidencia === lastPart ? "bg-[#83c5be]" : "null"
           }`}
           onClick={() => {
             if (i.ruta.startsWith("http://") || i.ruta.startsWith("https://")) {
