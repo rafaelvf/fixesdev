@@ -12,7 +12,7 @@ export default function Filters({ filtro, setFiltro }) {
       {filtros.map((i, index) => (
         <p
           key={index}
-          className={`text-[15px] border border-[#83c5be] rounded-lg px-3 py-1   cursor-pointer transition-colors duration-300 ${
+          className={`hover:bg-[#83c5be] text-[15px] border border-[#83c5be] rounded-lg px-3 py-1   cursor-pointer transition-colors duration-300 ${
             i === filtro ? "bg-[#83c5be]" : "bg-[#ffffff]"
           }`}
           onClick={() => setFiltro(i)}
