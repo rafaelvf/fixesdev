@@ -26,6 +26,7 @@ import galleryData from "@/data/gallery";
 
 export default function Profile() {
   const [abierto, setAbierto] = useState(false);
+  const [abierto23, setAbierto23] = useState(false);
   const { toast } = useToast();
   const copyEmailToClipboard = () => {
     navigator.clipboard.writeText("reviterif@gmail.com");
@@ -124,17 +125,28 @@ export default function Profile() {
                   />
                   <p className="font-semibold">2022</p>
                   <p className="font-light">
-                    -Built Saeta Coffee website as a freelancer
-                    <br />
                     -Landed my first job as a front-end developer at ParagonsNFT{" "}
                     <br />
                     -Moved to Long Lost Friends as a front-end too.
                     <br />I participated on 15+ different projects. Focused
                     heavily on beautiful desings, incredible animations and
                     overall rich and different experiences.
+                    <br />
+                    -Built Saeta Coffee website as a freelancer
                   </p>
                 </div>
-                <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
+                <div
+                  onClick={() => setAbierto23(!abierto23)}
+                  className={`relative flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded cursor-pointer overflow-hidden transition-all duration-500 ${
+                    abierto23 ? "max-h-96" : "max-h-20"
+                  }`}
+                >
+                  <img
+                    src={
+                      abierto23 ? "/icons/expanless.svg" : "/icons/expand.svg"
+                    }
+                    className=" w-6 h-6 absolute right-0"
+                  />
                   <p className="font-semibold">2023</p>
                   <p className="font-light">
                     -Cofounded Cuquipay which is my software business.
