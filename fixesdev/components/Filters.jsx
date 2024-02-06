@@ -8,7 +8,7 @@ const filtros = [
 ];
 export default function Filters({ filtro, setFiltro }) {
   return (
-    <div className="col-span-full w-full flex flex-wrap gap-2">
+    <div className="col-span-full w-full flex flex-wrap gap-2 h-fit">
       {filtros.map((i, index) => (
         <p
           key={index}
