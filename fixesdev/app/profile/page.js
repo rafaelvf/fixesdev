@@ -48,8 +48,8 @@ export default function Profile() {
           <TabsTrigger value="social">Social links</TabsTrigger>
           <TabsTrigger value="contact">Contact</TabsTrigger>
         </TabsList>
-        <TabsContent value="about" className="flex gap-20 flex-wrap">
-          <div className="max-w-[500px]">
+        <TabsContent value="about" className="flex gap-10 lg:gap-20 flex-wrap">
+          <div className="lg:max-w-[500px]">
             <p className="mt-4">
               I am a curious person who got into programming when I discovered I
               could automate my work, specifically with macros in Excel. It blew
@@ -93,10 +93,10 @@ export default function Profile() {
               taken.
             </p>
           </div>
-          <div>
+          <div className="mx-auto mt-4">
             <p className="font-bold">My roadmap</p>
             <div className="flex mt-4 gap-2">
-              <div className="h-[550px] w-[3px] bg-[#333333]"></div>
+              <div className="h-[585px] w-[3px] bg-[#333333]"></div>
               <div className="flex flex-col gap-4 max-w-[340px] text-[14px]">
                 <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
                   <p className="font-semibold">2020</p>
@@ -134,6 +134,9 @@ export default function Profile() {
                     Marriott
                     <br />
                     -Built Hallados e-commerce platform.
+                    <br />
+                    -Built a photography and a sailing event websites as a
+                    freelancer.
                   </p>
                 </div>
               </div>
