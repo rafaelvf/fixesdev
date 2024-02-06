@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -13,10 +14,26 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import projectsData from "@/data/projects";
+import Filters from "@/components/Filters";
 export default function Projects() {
+  const [filtro, setFiltro] = useState("All");
+  const [dataFiltrada, setDataFiltrada] = useState([]);
+
+  useEffect(() => {
+    const data = projectsData.filter((i) => {
+      if (filtro === "All") {
+        return projectsData;
+      } else {
+        return i.tag === filtro;
+      }
+    });
+    setDataFiltrada(data);
+  }, [filtro]);
+
   return (
     <div className="col-span-12 md:col-span-10 flex gap-4 flex-wrap p-4 justify-center md:justify-start ">
-      {projectsData.map((project, index) => (
+      <Filters filtro={filtro} setFiltro={setFiltro} />
+      {dataFiltrada.map((project, index) => (
         <Sheet key={index}>
           <Card className="flex flex-col max-w-[350px] w-full h-auto bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-[101%] transition">
             <CardHeader>

@@ -17,6 +17,7 @@ const projectsData = [
     url: "https://www.cuquipay.com/",
     video: "https://youtu.be/3qfj11HvtRg",
     image: "/images/cuqipay.png",
+    tag: "Co-founder",
   },
   {
     title: "Hallados",
@@ -34,6 +35,7 @@ const projectsData = [
     url: "https://hazmeunaoferta.almacenesmarriott.com/",
     video: "https://youtu.be/FPHc5nTIusM",
     image: "/images/hallados.png",
+    tag: "Freelance",
   },
   {
     title: "HazmeUnaOferta",
@@ -51,6 +53,7 @@ const projectsData = [
     url: "https://hazmeunaoferta.almacenesmarriott.com/",
     video: "https://youtu.be/FPHc5nTIusM",
     image: "/images/marriott1.webp",
+    tag: "Freelance",
   },
   {
     title: "Ambush design",
@@ -62,6 +65,7 @@ const projectsData = [
     url: "https://ambushdesign.io/",
     video: "",
     image: "/images/ambush2.png",
+    tag: "Long Lost Friends",
   },
   {
     title: "Moodiesnft",
@@ -73,6 +77,7 @@ const projectsData = [
     url: "https://www.moodiesnft.io/",
     video: "",
     image: "/images/moodies2.png",
+    tag: "Long Lost Friends",
   },
   {
     title: "Paragonsft",
@@ -84,6 +89,7 @@ const projectsData = [
     url: "https://paragonsnft.com/",
     video: "",
     image: "/images/paragons.png",
+    tag: "ParagonsNFT",
   },
   {
     title: "Salinassailingweek",
@@ -95,6 +101,7 @@ const projectsData = [
     url: "https://salinassailingweek.com/",
     video: "",
     image: "/images/ssw.png",
+    tag: "Freelance",
   },
   {
     title: "Marcia Fernández",
@@ -106,6 +113,7 @@ const projectsData = [
     url: "https://www.marciafernandez.com/",
     video: "",
     image: "/images/marcia.png",
+    tag: "Freelance",
   },
   {
     title: "Saetacoffee",
@@ -116,6 +124,7 @@ const projectsData = [
     url: "https://saetacoffee.com/",
     video: "",
     image: "/images/saeta.png",
+    tag: "Freelance",
   },
   {
     title: "TheJPeffect",
@@ -126,6 +135,7 @@ const projectsData = [
     url: "https://www.thejpeffect.io/",
     video: "",
     image: "/images/jpeffect.png",
+    tag: "Long Lost Friends",
   },
   {
     title: "Ghostsofthedeep",
@@ -136,6 +146,7 @@ const projectsData = [
     url: "https://www.ghostsofthedeep.io/",
     video: "",
     image: "/images/ghost.png",
+    tag: "Long Lost Friends",
   },
   {
     title: "Flycloudniners",
@@ -146,6 +157,7 @@ const projectsData = [
     url: "https://www.flycloudniners.com/",
     video: "",
     image: "/images/cloud2.png",
+    tag: "Long Lost Friends",
   },
   {
     title: "Whisbeverse",
@@ -156,6 +168,7 @@ const projectsData = [
     url: "https://www.whisbeverse.wtf/",
     video: "",
     image: "/images/whisbe.png",
+    tag: "Long Lost Friends",
   },
 ];
 
