@@ -50,8 +50,11 @@ export default function Profile() {
           <TabsTrigger value="social">Social links</TabsTrigger>
           <TabsTrigger value="contact">Contact</TabsTrigger>
         </TabsList>
-        <TabsContent value="about" className="flex gap-10 lg:gap-20 flex-wrap">
-          <div className="lg:max-w-[500px]">
+        <TabsContent
+          value="about"
+          className="flex flex-col xl:flex-row gap-10 lg:gap-20 flex-wrap"
+        >
+          <div className="xl:max-w-[600px]">
             <p className="mt-4">
               I am a curious person who got into programming when I discovered I
               could automate my work, specifically with macros in Excel. It blew
