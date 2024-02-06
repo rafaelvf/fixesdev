@@ -22,7 +22,7 @@ const projectsData = [
   {
     title: "Hallados",
     shortDescription:
-      "Is an e-commerce platform for AlmacenesMarriott, a prominent retailer specializing in lighting and furniture. This development introduces a unique twist where clients have the opportunity to negotiate the prices of products.",
+      "Is an e-commerce platform tailored for Hallados stores, a distinguished second-hand clothing boutique. Explore an extensive collection comprising thousands of garments from hundreds of renowned brands, offering a diverse range of fashion choices.",
     longDescription:
       " The platform is built using advanced technologies such as Next.js, React, TypeScript, SCSS, Sanity, and integrates with the Paymetez payment processor, as well as MongoDB for database management.",
     keyPoints: [
