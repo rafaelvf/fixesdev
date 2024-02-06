@@ -105,15 +105,15 @@ export default function Profile() {
                 <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
                   <p className="font-semibold">2020</p>
                   <p className="font-light">
-                    Started to learn programming online using Odin Project and
-                    Udemy.
+                    Started learning programming online using The Odin Project
+                    and Udemy.
                   </p>
                 </div>
                 <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
                   <p className="font-semibold">2021</p>
                   <p className="font-light">
-                    Took the plunge and assited a bootcamp that gave me
-                    esseantials to keep learning on my own.
+                    Took the plunge and assisted a bootcamp that gave me
+                    essentials to keep learning on my own.
                   </p>
                 </div>
                 <div
@@ -128,14 +128,35 @@ export default function Profile() {
                   />
                   <p className="font-semibold">2022</p>
                   <p className="font-light">
-                    -Landed my first job as a front-end developer at ParagonsNFT{" "}
+                    -Landed my first job as a front-end developer at{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrerz"
+                      href={"https://paragonsnft.com/"}
+                      className="font-semibold"
+                    >
+                      ParagonsNFT
+                    </Link>
+                    .
                     <br />
-                    -Moved to Long Lost Friends as a front-end too.
-                    <br />I participated on 15+ different projects. Focused
-                    heavily on beautiful desings, incredible animations and
-                    overall rich and different experiences.
+                    -Moved to Long Lost Friends as a front-end developer as
+                    well. Where I participated in 15+ different{" "}
+                    <Link href={"/projects"} className="font-semibold">
+                      projects
+                    </Link>
+                    , focusing heavily on beautiful designs, incredible
+                    animations, and overall rich and unique experiences.
                     <br />
-                    -Built Saeta Coffee website as a freelancer
+                    -Built the{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrerz"
+                      href={"https://saetacoffee.com/"}
+                      className="font-semibold"
+                    >
+                      Saeta Coffee
+                    </Link>{" "}
+                    website as a freelancer.
                   </p>
                 </div>
                 <div
@@ -152,15 +173,60 @@ export default function Profile() {
                   />
                   <p className="font-semibold">2023</p>
                   <p className="font-light">
-                    -Cofounded Cuquipay which is my software business.
+                    -Cofounded{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrerz"
+                      href={"https://www.cuquipay.com/"}
+                      className="font-semibold"
+                    >
+                      Cuquipay
+                    </Link>
+                    , my software business.
                     <br />
-                    -Built Hazmeunaoferta e-commerce platform for Almacenes
-                    Marriott
+                    -Built the{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrerz"
+                      href={"https://hazmeunaoferta.almacenesmarriott.com/"}
+                      className="font-semibold"
+                    >
+                      Hazmeunaoferta
+                    </Link>{" "}
+                    e-commerce platform for Almacenes Marriott
                     <br />
-                    -Built Hallados e-commerce platform.
+                    -Built the{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrerz"
+                      href={"https://hallados.com.ec/"}
+                      className="font-semibold"
+                    >
+                      Hallados
+                    </Link>{" "}
+                    e-commerce platform.
                     <br />
-                    -Built a photography and a sailing event websites as a
-                    freelancer.
+                    -Built a photography website for{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrerz"
+                      href={"https://www.marciafernandez.com/"}
+                      className="font-semibold"
+                    >
+                      Marcia Fernández
+                    </Link>{" "}
+                    .
+                    <br />
+                    -Built a sailing event website for{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrerz"
+                      href={"https://salinassailingweek.com/"}
+                      className="font-semibold"
+                    >
+                      Salinas Yacht Club
+                    </Link>{" "}
+                    .
                   </p>
                 </div>
               </div>
