@@ -48,49 +48,97 @@ export default function Profile() {
           <TabsTrigger value="social">Social links</TabsTrigger>
           <TabsTrigger value="contact">Contact</TabsTrigger>
         </TabsList>
-        <TabsContent value="about">
-          <p className="mt-4">
-            I am a curious person who got into programming when I learned I
-            could automate my work, specifically with macros in Excel. It blew
-            my mind and sparked my curiosity around programming. Then, in 2020
-            when the pandemic hit, I realized my current job wasn&apos;t making
-            me happy, and I started exploring more into programming, even though
-            I didn&apos;t think I was capable of being a programmer. After doing
-            some online courses, I decided to take a big step in 2021 and get
-            into a full-stack bootcamp to change careers definitively. Since
-            then, I have been nonstop working and learning every day. It has
-            been a huge sacrifice but an awesome and rewarding experience which
-            I like more and more.
-          </p>
-          <p className="mt-4">
-            {` Now I am a developer who loves to build products. I am currently
+        <TabsContent value="about" className="flex gap-20 flex-wrap">
+          <div className="max-w-[500px]">
+            <p className="mt-4">
+              I am a curious person who got into programming when I discovered I
+              could automate my work, specifically with macros in Excel. It blew
+              my mind and sparked my curiosity around programming. Then, in 2020
+              when the pandemic hit, I realized my current job wasn&apos;t
+              making me happy, and I started exploring more into programming,
+              even though I didn&apos;t think I was capable of being a
+              programmer. After doing some online courses, I decided to take a
+              big step in 2021 and get into a full-stack bootcamp to change
+              careers definitively. Since then, I have been nonstop working and
+              learning every day. It has been a huge sacrifice but an awesome
+              and rewarding experience which I like more and more.
+            </p>
+            <p className="mt-4">
+              {` Now I am a developer who loves to build products. I am currently
   building `}
-            <a
-              href="https://www.cuquipay.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold"
-            >
-              cuquipay
-            </a>
-            {` on top of many other projects. The
+              <a
+                href="https://www.cuquipay.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold"
+              >
+                cuquipay
+              </a>
+              {` on top of many other projects. The
   language I use to build my products is JavaScript, but my curiosity
   has also guided me to learn C and Python. For me, it's really
   important to know how things work, and C has given me an overall
   notion of low-level programming. Over the course of the years, I
   have been involved in many different projects which you can check
   out `}
-            <Link href={"/projects"} className="font-bold">
-              here.
-            </Link>
-          </p>
+              <Link href={"/projects"} className="font-bold">
+                here.
+              </Link>
+            </p>
 
-          <p className="mt-4">
-            Besides of programming I am a big fan of sports and photography. The
-            sport I practice the most is surfing. I try to do it whenever I have
-            the chance. Here is a gallery of my favorite photos I have taken.
-          </p>
-
+            <p className="mt-4">
+              Besides of programming I am a big fan of sports and photography.
+              The sport I practice the most is surfing. I try to do it whenever
+              I have the chance. Here is a gallery of my favorite photos I have
+              taken.
+            </p>
+          </div>
+          <div>
+            <p className="font-bold">My roadmap</p>
+            <div className="flex mt-4 gap-2">
+              <div className="h-[550px] w-[3px] bg-[#333333]"></div>
+              <div className="flex flex-col gap-4 max-w-[340px] text-[14px]">
+                <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
+                  <p className="font-semibold">2020</p>
+                  <p className="font-light">
+                    Started to learn programming online using Odin Project and
+                    Udemy.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
+                  <p className="font-semibold">2021</p>
+                  <p className="font-light">
+                    Took the plunge and assited a bootcamp that gave me
+                    esseantials to keep learning on my own.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
+                  <p className="font-semibold">2022</p>
+                  <p className="font-light">
+                    -Built Saeta Coffee website as a freelancer
+                    <br />
+                    -Landed my first job as a front-end developer at ParagonsNFT{" "}
+                    <br />
+                    -Moved to Long Lost Friends as a front-end too.
+                    <br />I participated on 15+ different projects. Focused
+                    heavily on beautiful desings, incredible animations and
+                    overall rich and different experiences.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
+                  <p className="font-semibold">2023</p>
+                  <p className="font-light">
+                    -Cofounded Cuquipay which is my software business.
+                    <br />
+                    -Built Hazmeunaoferta e-commerce platform for Almacenes
+                    Marriott
+                    <br />
+                    -Built Hallados e-commerce platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <Carousel className="w-full max-w-[16rem] sm:max-w-[25rem] md:max-w-[30rem] mx-auto mt-6">
             <CarouselContent>
               {galleryData.map((image, index) => (
