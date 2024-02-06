@@ -94,9 +94,9 @@ const projectsData = [
   {
     title: "Salinassailingweek",
     shortDescription:
-      "This is the official website for Salinas Sailing Week, it showcases what the event consist of, its news, pictures and results.",
+      "This serves as the official website for Salinas Sailing Week, providing a comprehensive overview of the event, including its features, latest updates, captivating imagery, and results",
     longDescription:
-      "I used technologies such as Nextjs, React, Tailwind, Sanity",
+      "I used technologies such as Nextjs, React, Tailwind, Sanity, Vercel",
     keyPoints: [],
     url: "https://salinassailingweek.com/",
     video: "",
@@ -106,9 +106,8 @@ const projectsData = [
   {
     title: "Marcia Fernández",
     shortDescription:
-      "Developed the web for Marcia Fernández to showcase her photography journey.",
-    longDescription:
-      "I used technologies such as Nextjs, React, Tailwind, Sanity",
+      "Crafted a sleek website for Marcia Fernández, showcasing her photography journey with elegance. Visitors can explore her evolving portfolio and delve into the stories behind each image. With seamless navigation and captivating visuals, the site invites viewers into Marcia's creative world.",
+    longDescription: "I used technologies such as Nextjs, React, Tailwind",
     keyPoints: [],
     url: "https://www.marciafernandez.com/",
     video: "",
@@ -118,7 +117,7 @@ const projectsData = [
   {
     title: "Saetacoffee",
     shortDescription:
-      "Developed the web for Saetacoffee which is a local pods coffee brand.",
+      "Developed a website for Saeta Coffee, a local pods coffee brand, to enhance its online presence. The platform offers a seamless experience for customers to explore and learn about the brand's offerings and ethos, showcasing its unique flavors and commitment to quality.",
     longDescription: "I used technologies such as Nextjs, React",
     keyPoints: [],
     url: "https://saetacoffee.com/",
@@ -130,7 +129,8 @@ const projectsData = [
     title: "TheJPeffect",
     shortDescription:
       "TheJPeffect is a creative project that showcases the art and design work of artist and designer JP, featuring bold, colorful graphics and unique illustrations. Through his work, JP aims to inspire and uplift others, bringing joy and positivity to the world. ",
-    longDescription: "I used technologies such as Nextjs, React",
+    longDescription:
+      "I used technologies such as Nextjs, React, typescript, scss and GSAP.",
     keyPoints: [],
     url: "https://www.thejpeffect.io/",
     video: "",
@@ -141,7 +141,8 @@ const projectsData = [
     title: "Ghostsofthedeep",
     shortDescription:
       "GhostOfTheDeep is an exciting web3 project which explores de the deep of the space through anonymous characters. ",
-    longDescription: "I used technologies such as Nextjs, React",
+    longDescription:
+      "I used technologies such as Nextjs, React, typescript, scss and GSAP.",
     keyPoints: [],
     url: "https://www.ghostsofthedeep.io/",
     video: "",
@@ -152,7 +153,8 @@ const projectsData = [
     title: "Flycloudniners",
     shortDescription:
       "5,555 high utility NFT collection + storyverse + limited edition brand collab drops.",
-    longDescription: "I used technologies such as Nextjs, React",
+    longDescription:
+      "I used technologies such as Nextjs, React, typescript, scss and GSAP.",
     keyPoints: [],
     url: "https://www.flycloudniners.com/",
     video: "",
@@ -163,7 +165,8 @@ const projectsData = [
     title: "Whisbeverse",
     shortDescription:
       "The Vandalized series is comprised of 600 mintable NFTs created in collaboration with 24 exceptional artists. It embodies each artist's unique and individual twist on WhIsBe's iconic Vandal Gummy collection.",
-    longDescription: "I used technologies such as Nextjs, React",
+    longDescription:
+      "I used technologies such as Nextjs, React, typescript, scss and GSAP.",
     keyPoints: [],
     url: "https://www.whisbeverse.wtf/",
     video: "",
