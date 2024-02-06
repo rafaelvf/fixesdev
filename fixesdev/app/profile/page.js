@@ -25,6 +25,7 @@ import {
 import galleryData from "@/data/gallery";
 
 export default function Profile() {
+  const [abierto, setAbierto] = useState(false);
   const { toast } = useToast();
   const copyEmailToClipboard = () => {
     navigator.clipboard.writeText("reviterif@gmail.com");
@@ -94,9 +95,8 @@ export default function Profile() {
             </p>
           </div>
           <div className="mx-auto mt-4">
-            <p className="font-bold">My roadmap</p>
             <div className="flex mt-4 gap-2">
-              <div className="h-[585px] w-[3px] bg-[#333333]"></div>
+              <div className="h-auto w-[3px] bg-[#333333]"></div>
               <div className="flex flex-col gap-4 max-w-[340px] text-[14px]">
                 <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
                   <p className="font-semibold">2020</p>
@@ -112,7 +112,16 @@ export default function Profile() {
                     esseantials to keep learning on my own.
                   </p>
                 </div>
-                <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
+                <div
+                  onClick={() => setAbierto(!abierto)}
+                  className={`relative flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded cursor-pointer overflow-hidden transition-all duration-500 ${
+                    abierto ? "max-h-96" : "max-h-20"
+                  }`}
+                >
+                  <img
+                    src={abierto ? "/icons/expanless.svg" : "/icons/expand.svg"}
+                    className=" w-6 h-6 absolute right-0"
+                  />
                   <p className="font-semibold">2022</p>
                   <p className="font-light">
                     -Built Saeta Coffee website as a freelancer
