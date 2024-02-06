@@ -8,11 +8,11 @@ const filtros = [
 ];
 export default function Filters({ filtro, setFiltro }) {
   return (
-    <div className="col-span-full w-full flex gap-2">
+    <div className="col-span-full w-full flex flex-wrap gap-2">
       {filtros.map((i, index) => (
         <p
           key={index}
-          className={`border border-[#83c5be] rounded-lg px-3 py-1   cursor-pointer transition-colors duration-300 ${
+          className={`text-[15px] border border-[#83c5be] rounded-lg px-3 py-1   cursor-pointer transition-colors duration-300 ${
             i === filtro ? "bg-[#83c5be]" : "bg-[#ffffff]"
           }`}
           onClick={() => setFiltro(i)}
