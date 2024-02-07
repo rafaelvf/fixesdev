@@ -33,7 +33,7 @@ const projectsData = [
       "Administrators benefit from a user-friendly back-office system, empowering efficient management of sales, products, and user closets.",
     ],
     url: "https://hallados.com.ec/",
-    video: "https://youtu.be/FPHc5nTIusM",
+    video: "https://youtu.be/bYwXkqy7ZHg",
     image: "/images/hallados.png",
     tag: "Freelance",
   },
