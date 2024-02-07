@@ -24,15 +24,15 @@ const projectsData = [
     shortDescription:
       "Is an e-commerce platform tailored for Hallados stores, a distinguished second-hand clothing boutique. Explore an extensive collection comprising thousands of garments from hundreds of renowned brands, offering a diverse range of fashion choices.",
     longDescription:
-      " The platform is built using advanced technologies such as Next.js, React, TypeScript, SCSS, Sanity, and integrates with the Paymetez payment processor, as well as MongoDB for database management.",
+      " The platform is built using advanced technologies such as Next.js, React, JavaScript, SCSS, Cloudinary to store images, and integrates with the Paymetez payment processor, as well as MongoDB for database management.",
     keyPoints: [
-      "Bot that deals price with customers",
-      "Is integrated with their SAP system",
-      "Integrates Paymetez payment processor that accepts Visa, Mastercard, Amex, etc",
-      "Uses Sanity as a CMS to upload the images for their products",
-      "Backoffice for admins so they can manage their sales and products",
+      "A comprehensive online store boasting an extensive inventory of 4000 distinct clothing items",
+      "Owners are equipped with a comprehensive backoffice, facilitating control over various e-commerce aspects including brand filters and carousel configurations",
+      "Integration of Paymetez payment processor ensures seamless transactions with major cards like Visa, Mastercard, and Amex",
+      "Utilizes Cloudinary for efficient image uploads for product displays",
+      "Administrators benefit from a user-friendly back-office system, empowering efficient management of sales, products, and user closets.",
     ],
-    url: "https://hazmeunaoferta.almacenesmarriott.com/",
+    url: "https://hallados.com.ec/",
     video: "https://youtu.be/FPHc5nTIusM",
     image: "/images/hallados.png",
     tag: "Freelance",
@@ -46,7 +46,7 @@ const projectsData = [
     keyPoints: [
       "Bot that deals price with customers",
       "Is integrated with their SAP system",
-      "Integrates Paymetez payment processor that accepts Visa, Mastercard, Amex, etc",
+      "Integration of Paymetez payment processor ensures seamless transactions with major cards like Visa, Mastercard, and Amex",
       "Uses Sanity as a CMS to upload the images for their products",
       "Backoffice for admins so they can manage their sales and products",
     ],
