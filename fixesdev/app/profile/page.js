@@ -42,8 +42,8 @@ export default function Profile() {
 
   return (
     <div
-      style={{ maxHeight: "calc(100vh - 87px)", overflow: "auto" }}
-      className="col-span-12 md:col-span-10 flex p-4 bg-[#fafafa] h-full"
+      className="col-span-12 md:col-span-10 flex p-4 bg-[#fafafa] h-full overflow-scroll"
+      style={{ maxHeight: "calc(100vh - 87.5px)" }}
     >
       <Toaster />
       <Tabs defaultValue={"about"} className="w-fit">

@@ -14,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body
+        className={`${inter.className}`}
+        style={{ maxHeight: "calc(100vh - 87.5px)", overflow: "hidden" }}
+      >
         {" "}
         <Navbar />
         <div className="relative grid grid-cols-12 bg-[#fafafa] ">

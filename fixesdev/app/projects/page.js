@@ -32,7 +32,7 @@ export default function Projects() {
 
   return (
     <div
-      style={{ maxHeight: "100vh", overflow: "auto" }}
+      style={{ maxHeight: "calc(100vh - 87.5px)", overflow: "scroll" }}
       className="col-span-12 md:col-span-10  gap-4  flex-wrap  p-4 justify-center md:justify-start"
     >
       <Filters filtro={filtro} setFiltro={setFiltro} />
