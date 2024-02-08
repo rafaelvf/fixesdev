@@ -26,7 +26,7 @@ export default function Navbar() {
     window.open(url, "_blank");
   };
   return (
-    <div className="border-b border-[#ededed]  px-4 lg:px-8 py-4 flex justify-between items-center relative">
+    <div className="border-b bg-[#ffffff] border-[#ededed]  px-4 lg:px-8 py-4 flex justify-between items-center relative">
       <p className="text-[#333333] font-bold">Fixesdev</p>
       <Toaster />
       <div className="flex items-center gap-4">

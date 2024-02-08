@@ -10,7 +10,7 @@ export default function Sidebar() {
   const lastPart = parts[parts.length - 1];
 
   return (
-    <div className="hidden md:flex  col-span-2 border-r border-[#ededed] p-6  flex-col gap-6 bg-[#ffffff]">
+    <div className="hidden md:flex  col-span-2 border-r border-[#ededed] p-6  flex-col gap-6 bg-[#ffffff] h-screen">
       {sidebar.map((i, index) => (
         <p
           key={index}

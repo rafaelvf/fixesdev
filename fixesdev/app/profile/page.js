@@ -41,7 +41,10 @@ export default function Profile() {
   };
 
   return (
-    <div className="col-span-12 md:col-span-10 flex p-4 bg-[#ffffff] h-full">
+    <div
+      style={{ maxHeight: "calc(100vh - 87px)", overflow: "auto" }}
+      className="col-span-12 md:col-span-10 flex p-4 bg-[#fafafa] h-full"
+    >
       <Toaster />
       <Tabs defaultValue={"about"} className="w-fit">
         <TabsList className="grid w-full grid-cols-4 w-[350px] mx-auto md:mx-0">
@@ -101,7 +104,7 @@ export default function Profile() {
           <div className="mx-auto mt-4">
             <div className="flex mt-4 gap-2">
               <div className="h-auto w-[3px] bg-[#333333]"></div>
-              <div className="flex flex-col gap-4 max-w-[340px] text-[14px]">
+              <div className="flex flex-col gap-4 max-w-[340px] text-[14px] bg-[#ffffff]">
                 <div className="flex flex-col gap-1 border border-[#83c5be] p-1 px-2 rounded">
                   <p className="font-semibold">2020</p>
                   <p className="font-light">

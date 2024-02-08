@@ -14,10 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className}`}>
         {" "}
         <Navbar />
-        <div className="relative grid grid-cols-12 bg-[#fafafa] h-full">
+        <div className="relative grid grid-cols-12 bg-[#fafafa] ">
           <Sidebar />
           <Sidebarmobile />
           <Link
