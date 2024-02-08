@@ -31,7 +31,7 @@ export default function Projects() {
   }, [filtro]);
 
   return (
-    <div className="col-span-12 md:col-span-10 flex gap-4 min-h-screen flex-wrap p-4 justify-center md:justify-start ">
+    <div className="col-span-12 md:col-span-10 flex gap-4  flex-wrap  p-4 justify-center md:justify-start ">
       <Filters filtro={filtro} setFiltro={setFiltro} />
       {dataFiltrada.map((project, index) => (
         <Sheet key={index}>
