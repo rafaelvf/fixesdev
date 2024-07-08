@@ -22,7 +22,7 @@ export default function Navbar() {
     });
   };
   const handleViewPortfolio = () => {
-    const url = "/CVRafael24.pdf";
+    const url = "RafaelViteri24.pdf";
     window.open(url, "_blank");
   };
   return (
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent className=" mr-1">
               <DropdownMenuLabel>Rafael Viteri</DropdownMenuLabel>
               <p className="text-[11px] pl-2 pb-[8px]">Software developer</p>
               <DropdownMenuSeparator />
