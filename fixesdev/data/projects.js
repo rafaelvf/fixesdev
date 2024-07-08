@@ -1,5 +1,22 @@
 const projectsData = [
   {
+    title: "Megamind",
+    shortDescription:
+      "Megamind is a specialized neuropsychological center dedicated to serving both children and adults. This comprehensive website showcases all the essential information related to the center, including its services, expertise, and approach to neuropsychological care.",
+    longDescription:
+      "Megamind is a specialized neuropsychological center dedicated to serving both children and adults. This comprehensive website showcases all the essential information related to the center, including its services, expertise, and approach to neuropsychological care. Visitors can explore the range of assessments and treatments offered, learn about the experienced team of professionals, and find valuable resources to support their neuropsychological health journey.",
+    keyPoints: [
+      "I implemented Next.js to leverage its server-side rendering (SSR) and static generation capabilities, resulting in fast loading times and a smooth user experience on the Megamind website.",
+      "I utilized Tailwind CSS to create a fully responsive and visually appealing user interface, adapting seamlessly to both mobile and desktop devices, while maintaining consistency with Megamind's brand identity.",
+      "I designed a modular and reusable component architecture in React, facilitating future expansions and maintenance of the Megamind website.",
+      "I took advantage of Next.js's SEO capabilities, implementing dynamic metadata and optimized routing to enhance the online visibility of the Megamind neuropsychological center.",
+    ],
+    url: "https://www.megamind.ec/",
+    video: "",
+    image: "/images/megamind.png",
+    tag: "Freelance",
+  },
+  {
     title: "Cuquipay",
     shortDescription:
       "Cuquipay is a platform specialized in accelerating and facilitating market entry for entrepreneurs or small businesses. We aim to democratize e-commerce and make it possible for all businesses to sell online.",
